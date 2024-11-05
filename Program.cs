@@ -7,12 +7,21 @@
             double pi = 3.14;
             bool isLearningCS = true;
             string favouriteFilm = "Interstellar";
-            Console.WriteLine("My favourite film is " + favouriteFilm);
+           
             favouriteFilm = "High School Musical";
+            PrintGreeting("Susan");
+            Console.WriteLine(SubtractNum(6, 3));
 
-            Console.WriteLine(pi);
-            Console.WriteLine(isLearningCS);
-            Console.WriteLine("My favourite film is " + favouriteFilm);
+          
+        }
+
+        private static void PrintGreeting(string name)
+        {
+            Console.WriteLine("Hello, " + name);
+        }
+        private static int SubtractNum(int x, int y)
+        {
+            return x - y;
         }
     }
 }
