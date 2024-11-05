@@ -17,6 +17,17 @@
             int result = SubtractNum(5, 4);
             Console.WriteLine(result);
 
+            Book csBasicsBook = new Book("CS Basics", 30);
+            Console.WriteLine(csBasicsBook.CurrentPage);
+            Console.WriteLine(csBasicsBook.Title);
+            csBasicsBook.TurnPage();
+            csBasicsBook.TurnPage();
+            Console.WriteLine(csBasicsBook.CurrentPage);
+            Console.WriteLine(csBasicsBook.Title);
+
+
+
+
 
         }
 

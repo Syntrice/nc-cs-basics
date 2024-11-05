@@ -8,23 +8,24 @@ namespace CSBasics
 {
     internal class Book
     {
-        public string Title { get; set; }
-        public int TotalPages { get; set; }
+        public string Title { get; }
+        public int TotalPages { get; }
 
-        public int CurrentPage { get; set; }
+        private int currentPage;
+        public int CurrentPage { get => currentPage; }
 
         public Book(string title, int pages)
         {
             Title = title;
             TotalPages = pages;
-            CurrentPage = 1;
+            currentPage = 1;
         }
 
         public void TurnPage()
         {
             if (CurrentPage < TotalPages)
             {
-                CurrentPage++;
+                currentPage++;
                 Console.WriteLine("Current Page: " + CurrentPage);
             }
             else
