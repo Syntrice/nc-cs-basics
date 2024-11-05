@@ -29,7 +29,7 @@
             return x - y;
         }
 
-        private static bool isStringLonger(string word, int number)
+        private static bool IsStringLonger(string word, int number)
         {
             return word.Length > number;
         }
