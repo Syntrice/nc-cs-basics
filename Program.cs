@@ -12,7 +12,7 @@
             PrintGreeting("Susan");
             Console.WriteLine(SubtractNum(6, 3));
 
-            Console.WriteLine(isStringLonger("Hello", 6));
+            Console.WriteLine(IsStringLonger("Hello", 6));
 
             int result = SubtractNum(5, 4);
             Console.WriteLine(result);
