@@ -9,12 +9,28 @@ namespace CSBasics
     internal class Book
     {
         public string Title { get; set; }
-        public int Pages { get; set; }
+        public int TotalPages { get; set; }
+
+        public int CurrentPage { get; set; }
 
         public Book(string title, int pages)
         {
             Title = title;
-            Pages = pages;
+            TotalPages = pages;
+            CurrentPage = 1;
+        }
+
+        public void TurnPage()
+        {
+            if (CurrentPage < TotalPages)
+            {
+                CurrentPage++;
+                Console.WriteLine("Current Page: " + CurrentPage);
+            }
+            else
+            {
+                Console.WriteLine("Page does not exist");
+            }
         }
     }
 }
